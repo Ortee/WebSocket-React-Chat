@@ -14,18 +14,13 @@ class Chat extends React.Component {
   }
   render() {
     socket.on('chat message', function(msg){
-      console.log('this.state.messages', this.state);
     });
     socket.on('connect', function(){
-      console.log('CONNECTED');
     });
     socket.on('event', function(data){
-      console.log('EVENT');
     });
     socket.on('disconnect', function(){
-      console.log('DISCONNECT');
     });
-    console.log("messages",this.state);
     return (
       <div>
       {['test','test2'].map((e, i) => {
