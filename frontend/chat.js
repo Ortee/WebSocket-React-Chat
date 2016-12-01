@@ -23,7 +23,7 @@ class Chat extends React.Component {
     });
     return (
       <div>
-      {['test','test2'].map((e, i) => {
+      {['test','test2','test3','test4'].map((e, i) => {
         return <Message key={i} text={e}/>
       })}
       CHAT
