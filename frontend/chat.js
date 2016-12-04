@@ -9,7 +9,7 @@ class Chat extends React.Component {
   }
   onSub(){
     setInterval(function () {
-      socket.emit('chat message', "TEST MESSAGE");
+      socket.emit('chat message', "TEST");
     }, 1000);
   }
   render() {
